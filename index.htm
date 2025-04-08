@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            height: 100vh;
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .header-text {
+            flex: 1;
+            padding-right: 40px;
+        }
+        
+        .header-text h1 {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #5ce1e6;
+            margin-bottom: 20px;
+        }
+        
+        .header-text p {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #5ce1e6;
+        }
+        
+        .header-image {
+            flex: 1;
+            text-align: right;
+        }
+        
+        .header-image img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(34, 34, 34, 0.9);
+            z-index: 1000;
+            padding: 20px 0;
+        }
+        
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #5ce1e6;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #5ce1e6;
+        }
+        
+        button {
+            background-color: #5ce1e6;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #ff6b6b;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #5ce1e6;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+        }
+        
+        .skills {
+            margin-top: 30px;
+        }
+        
+        .skills h4 {
+            margin-bottom: 15px;
+        }
+        
+        .skill-bars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: #5ce1e6;
+            color: #222;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Header</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Header Section -->
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Khushi</h1>
+                    <p>AND THIS IS MY Portfolio</p>
+                    <button>View My Work</button>
+                </div>
+                <div class="header-image">
+                    <img src="#" alt="Khushi's Portrait">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who Am I?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eos itaque repellendus iste. Facilis excepturi nihil repellendus libero! Delectus ab harum incidunt enim sunt, molestias odio laudantium architecto sit aut.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum magni vero nisi explicabo. Ipsa, laboriosam illum optio corporis dolore voluptate dolorem dolorum, magnam amet quod aliquid. Soluta laboriosam aperiam laudantium.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque aliquam ex, reprehenderit commodi quisquam maxime repellendus facere suscipit rerum minus eos autem quod vitae consequuntur, nesciunt illum veniam totam.</p>
+                    
+                    <div class="skills">
+                        <h4>My Skills</h4>
+                        <div class="skill-bars">
+                            <span class="skill-tag">Graphic Design</span>
+                            <span class="skill-tag">Photography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
